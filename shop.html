@@ -2,81 +2,219 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Нёрдс </title>
-  </head>
+      </head>
   <body>
-<header>
+<header class=header>
+  <!--Навигационная панель-->
   <nav>
-    <a href="index.html">
-     <img  src="img/index-logo.svg" width="368" height="153" alt="Логотип студии  «Нёрдс»">
+    <!--Логотип-->
+    <a href="index.html" aria-label="Студия Нёрдс">
+     <img src="img/index-logo.svg" width="368" height="153" alt="Логотип студии  «Нёрдс»">
     </a>
+    <!--Меню-->
     <ul>
-      <li><a href="blank.html">Студия</a></li>
-      <li><a href="blank.html">Клиенты</a></li>
-      <li><a href="blank.html">Магазин/a></li>
-      <li><a href="blank.html">Контакты</a></li>
+      <li><a href="#">Студия</a></li>
+      <li><a href="#">Клиенты</a></li>
+      <li><a href="shop.html">Магазин</a></li>
+      <li><a href="#">Контакты</a></li>
     </ul>
-    <a href="blank.html">Корзина</a>
-   <nav>
+    <!--Корзина, пользовательское меню-->
+    <ul>
+       <li><a href="#">Корзина</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main>
 <h1>Магазин готовых шаблонов</h1>
-
-<form>
-<h2>Сетка:</h2>
-  <p>
-   <input type="radio" value="adaptive" checked name="grid"/>Адаптивная
-  </p>
-  <p>
-  <input type="radio" value="fix" checked name="grid"/>Фиксированная
-  </p>
-  <p>
-  <input type="radio" value="rubber" checked name="grid"/>Резиновая
-  </p>
+<!--форма выбора контента-->
+<form class="form">
+  <!--Стоимость-->
+<fieldset>
+   <legend>Стоимость</legend>
+</fieldset>
+  <!--Сетка-->
+<fieldset>
+  <legend>Сетка:</legend>
+  <ul>
+    <li>
+       <label for="">
+         <input type="radio" checked name="adaptive">Адаптивная
+       </label>
+    </li>
+    <li>
+       <label for="">
+         <input type="radio" name="fix">Фиксированная
+       </label>
+    </li>
+    <li>
+       <label for="">
+         <input type="radio" name="rubber"> Резиновая
+       </label>
+    </li>
+  </ul>
+</fieldset>
+  <!--Особенности-->
+<fieldset>
+  <legend>Особенности:</legend>
+  <ul>
+    <li>
+      <label for="">
+        <input type="checkbox" checked name="slider">Слайдер
+      </label>
+    </li>
+    <li>
+      <label for="">
+        <input type="checkbox" name="advantage">Блок преимуществ
+      </label>
+    </li>
+    <li>
+      <label for="">
+        <input type="checkbox" checked name="news">Новости
+      </label>
+    </li>
+    <li>
+      <label for="">
+        <input type="checkbox" name="gallery">Галерея
+      </label>
+    </li>
+    <li>
+      <label for="">
+        <input type="checkbox" name="basket">Корзина
+      </label>
+    </li>
+    <li>
+      <label for="">
+        <a href="#">Показать</a>
+      </label>
+    </li>
+  </ul>
+  </fieldset>
 </form>
-
-<form>
-<h2>Особенности:<h2>
-  <p>
-    <input type="checkbox" checked name="slider"/>Слайдер
-  </p>
-  <p>
-    <input type="checkbox" name="advantage"/><Блок преимуществ
-  </p>
-  <p>
-    <input type="checkbox" checked name="news"/>Новости
-  </p>
-  <p>
-    <input type="checkbox" name="gallery"/><Галерея
-  </p>
-  <p>
-    <input type="checkbox" name="basket"/><Корзина
-  </p>
-  <p>
-    <button type="submit">Показать</button>
-  </p>
-</form>
-</main>
-
-<footer>
-  <section>
-    <h2>Давайте дружить!</h2>
+<!--Контент-->
+<div class="content">
+  <!--Первый ряд сортировки-->
+  <div class="sort">
+    <h3>Сортировать</h3>
     <ul>
+      <li><a href="#">По цене</a></li>
+      <li><a href="#">По типу</a></li>
+      <li><a href="#">По названию</a></li>
       <li>
-        <a href="#">Вконтакте</a>
-      </li>
-      <li>
-        <a href="#">Фейсбук</a>
-      </li>
-      <li>
-        <a href="#">Инстаграм</a>
+      <a href="#" aria-label="По возрастанию">&#9650</a>
+      <a href="#" aria-label="По убыванию">&#9660</a>
       </li>
     </ul>
-  </section>
+  </div>
+  <!--Второй ряд результат-->
+    <ul class="products">
+      <!--sedona-->
+      <li class="product">
+        <a href="#">
+         <img src=""alt="">
+         <img src=""alt="">
+         <div class="description">
+           <h4>Название</h4>
+           <p>Описание</p>
+           <p>Цена</p>
+         </div>
+       </a>
+    </li>
+        <!--pink-->
+      <li class="product">
+        <a href="#">
+         <img src="" alt="">
+         <img src="" alt="">
+         <div class="description">
+           <h4>Название</h4>
+           <p>Описание</p>
+           <p>Цена</p>
+         </div>
+       </a>
+    </li>
+    <!--barbershop-->
+    <li class="product">
+      <a href="#">
+        <img src="" alt="">
+        <img src="" alt="">
+        <div class="description">
+          <h4>Название</h4>
+          <p>Описание</p>
+          <p>Цена</p>
+        </div>
+      </a>
+    </li>
+    <!--mishka-->
+    <li class="product">
+      <a href="#">
+        <img src="" alt="">
+        <img src="" alt="">
+        <div class="description">
+          <h4>Название</h4>
+          <p>Описание</p>
+          <p>Цена</p>
+        </div>
+      </a>
+    </li>
+    <!--shkola a+-->
+    <li class="product">
+      <a href="#">
+        <img src="" alt="">
+        <img src="" alt="">
+        <div class="description">
+          <h4>Название</h4>
+          <p>Описание</p>
+          <p>Цена</p>
+        </div>
+      </a>
+    </li>
+    <!--kvast-->
+    <li class="product">
+      <a href="#">
+        <img src="" alt="">
+        <img src="" alt="">
+        <div class="description">
+          <h4>Название</h4>
+          <p>Описание</p>
+          <p>Цена</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+ <!--Третий ряд пагинация-->
+ <ul class="pagination">
+   <li><a href="#">1</a></li>
+   <li><a href="#">2</a></li>
+   <li><a href="#">3</a></li>
+   <li><a href="#">Следующая</a></li>
+ </ul>
+</div>
+</main>
 
-  <section>
-  <h2>Давайте дружить, это выгодно!</h2>
-  <p>Скидка 10% для друзей из социальных сетей</p>
-  </section>
+<!--Подвал сайта-->
+  <footer>
+    <!--Кнопки соцсетей-->
+    <div class="social">
+      <p class="hidden">Давайте дружить!</p>
+      <ul>
+        <li>
+          <a class="vk"><img src="img/vk.svg" width="10" height="10" alt="Вконтакте"></a>
+        </li>
+        <li>
+          <a class="f"><img src="img/f.svg" width="10" height="10" alt="Фейсбук"></a>
+        </li>
+        <li>
+          <a class="instagram"><img src="img/instagram.svg" width="10" height="10" alt="Инстангам"></a>
+        </li>
+      </ul>
+    </div>
+<!--скидка-->
+    <div class="friends">
+    <p>Давайте дружить, это выгодно!</p>
+    <p>Скидка 10% для друзей из социальных сетей</p>
+  </div>
 </footer>
+  </body>
+</html>
