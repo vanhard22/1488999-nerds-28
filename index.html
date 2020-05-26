@@ -99,15 +99,24 @@
         <p>С 2004 года любим точность во всём:</p>
         <ul>
           <li>
-              <sup>146%</sup>
+            <p>
+              146
+              <sup>%</sup>
+            </p>
               <span>Уровень самоотдачи</span>
           </li>
           <li>
-            <sup>100%</sup>
+            <p>
+              100
+              <sup>%</sup>
+            </p>
             <span>Соблюдение сроков</span>
           </li>
           <li>
-            <sup>50%</sup>
+            <p>
+              50
+              <sup>%</sup>
+            </p>
             <span>Минимальная предоплата</span>
           </li>
         </ul>
@@ -178,5 +187,25 @@
     <p>Скидка 10% для друзей из социальных сетей</p>
   </div>
 </footer>
+<!--Форма обратной связи-->
+<section>
+  <h2>Напишите нам</h2>
+    <form class="Feedback" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="name">Ваше имя:</label>
+      <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label for="mail">Ваш email:</label>
+      <input id="mail" type="email" name="mail" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="letter">Текст письма:</label><br>
+       <textarea id="letter" rows="5" cols="100" name="letter" placeholder="В свободной форме"></textarea><br>
+      <button type="submit">Отправить</button>
+    </p>
+  </form>
+  <p><button class="exit" type="button">Закрыть</button><p>
+</section>
   </body>
 </html>
