@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Нёрдс </title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
       </head>
   <body>
 <header class="header">
@@ -31,7 +31,7 @@
 
 <main>
   <!--начало основной страницы-->
-<h1 class="visually-hidden">Дизайн студия «Нёрдс»</h1>
+<h1 class=visually-hidden>Дизайн студия «Нёрдс»</h1>
 <!--Слайдер-->
   <section class="slider">
     <ul>
@@ -73,7 +73,7 @@
         <a href="#">Заказать</a>
       </li>
       <li class="presentations">
-        <img src="img/advantages/illustration-3.jpg" width="300" height="146" alt="презентации">
+        <img src="img/advantages/illustration-3.jpg" width="300" height="146" alt="Презентации">
         <h3>Презентации</h3>
         <p>Вы даже не подозреваете, на сколько вы изумительны</p>
         <a href="#">Заказать</a>
@@ -195,15 +195,15 @@
    <div class="modal_header">
      <h2 class="modal_title">Напишите нам</h2>
       <button class="modal_exit">
-        <img src="img/modal/exit.svg" alt="Кнопка закрыти формы обратной связи"
+        <img src="img/modal/exit.svg" alt="Конопка закрытия формы обратной связи">
       </button>
    </div>
   <!--Контактная форма-->
   <form action="https://echo.htmlacademy.ru" method="post" class="modal_form">
     <ul class="modal_list">
       <li>
-        <label for="user_uame">Ваше имя:</label>
-        <input type="text" name="user_name" id="user_name" placeholder="Имя Фамилия" required >
+        <label for="user_name">Ваше имя:</label>
+        <input id="user_name" type="text" name="user_name"  placeholder="Имя Фамилия" required>
       </li>
       <li>
         <label for="user_email">Ваш email:</label>
@@ -211,9 +211,9 @@
       </li>
       <li>
         <label for="user_message">Текст письма:</label>
-         <textarea id="user_message" name="user_message "rows="5" cols="100" placeholder="В свободной форме" required></textarea>
+         <textarea id="user_message" name="user_message" rows="5" cols="100" placeholder="В свободной форме" required></textarea>
       </li>
-     </ul>      <label for="name">Ваше имя:</label>
+     </ul>
     <button type="submit">Отправить</button>
   </form>
 </div>
