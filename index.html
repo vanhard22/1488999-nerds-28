@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Нёрдс </title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/style.css">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/style.css">
       </head>
   <body>
 <header class="header">
@@ -33,6 +34,16 @@
   <!--начало основной страницы-->
 <h1 class=visually-hidden>Дизайн студия «Нёрдс»</h1>
 <!--Слайдер-->
+    <div class="slider container">
+      <input type="radio" id="btn-1" name="toggle" checked>
+      <input type="radio" id="btn-2" name="toggle">
+      <input type="radio" id="btn-3" name="toggle">
+      <div class="slider-controls">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
+   </div>
+
   <section class="slider">
     <ul>
       <li>
